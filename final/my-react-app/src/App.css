@@ -37,22 +37,41 @@
   }
 }
 
-/* App.css */
 .content-box {
-  background-color: black;
   color: white;
   padding: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center; /* Align items vertically */
+}
+
+.black-background {
+  background-color: black;
 }
 
 .logo {
-  width: 100px; /* Adjust width as needed */
+  width: 100px;
   height: auto;
-  margin-right: 20px; /* Adjust margin as needed */
-  padding-left: 0px;
-  margin-left: 0px;
-  margin-top: 0px;
+  margin-right: 20px;
 }
 
 .content {
-  flex-grow: 1; /* Content occupies remaining space */
+  flex-grow: 1;
+}
+
+.navigation {
+  display: flex;
+  justify-content: flex-end; /* Align items to the right */
+}
+
+.nav-button {
+  background-color: transparent;
+  color: white;
+  border: none;
+  margin-left: 10px; /* Adjust margin as needed */
+  cursor: pointer;
+}
+
+.nav-button:hover {
+  text-decoration: underline; /* Underline on hover */
 }

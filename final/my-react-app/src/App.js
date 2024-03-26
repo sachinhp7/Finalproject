@@ -1,6 +1,5 @@
 import logo from './logo.svg';
 import './App.css';
-
 import mylogo from './logo.png';
 
 function App() {
@@ -11,7 +10,13 @@ function App() {
         {/* Logo on the left */}
         <img src={mylogo} className="logo" alt="logo" />
         <div className="content">
-          <p>This is the content box with a black background.</p>
+          
+          {/* Navigation bar on the right */}
+          <nav className="navigation">
+            <button className="nav-button">Home</button>
+            <button className="nav-button">About</button>
+            <button className="nav-button">Contact</button>
+          </nav>
         </div>
       </div>
       {/* Header */}
