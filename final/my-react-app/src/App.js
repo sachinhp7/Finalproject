@@ -4,6 +4,11 @@ import './App.css';
 function App() {
   return (
     <div className="App">
+      {/* Content box with black background */}
+      <div className="content-box">
+        <p>This is the content box with a black background.</p>
+      </div>
+      {/* Header */}
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>

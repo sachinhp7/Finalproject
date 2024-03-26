@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+
+/* App.css */
+.content-box {
+  background-color: black;
+  color: white;
+  padding: 20px;
+}
+
