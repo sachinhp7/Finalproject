@@ -1,12 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
 
+import mylogo from './logo.png';
+
 function App() {
   return (
     <div className="App">
       {/* Content box with black background */}
-      <div className="content-box">
-        <p>This is the content box with a black background.</p>
+      <div className="content-box black-background">
+        {/* Logo on the left */}
+        <img src={mylogo} className="logo" alt="logo" />
+        <div className="content">
+          <p>This is the content box with a black background.</p>
+        </div>
       </div>
       {/* Header */}
       <header className="App-header">

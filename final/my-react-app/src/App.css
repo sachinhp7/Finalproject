@@ -44,3 +44,15 @@
   padding: 20px;
 }
 
+.logo {
+  width: 100px; /* Adjust width as needed */
+  height: auto;
+  margin-right: 20px; /* Adjust margin as needed */
+  padding-left: 0px;
+  margin-left: 0px;
+  margin-top: 0px;
+}
+
+.content {
+  flex-grow: 1; /* Content occupies remaining space */
+}
