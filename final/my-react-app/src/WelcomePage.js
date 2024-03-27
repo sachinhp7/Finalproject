@@ -23,8 +23,13 @@ const WelcomePage = () => {
         </div>
       </div>
       {/* Header */}
-      <header className="green-background"> 
-        
+      <header className="green-background">
+
+      <div className="header-content">
+          <h1 className="welcome">Welcome to Math Solver</h1>
+          <p className="welpara">Solve math problems with ease</p>
+          
+        </div>
         
       </header>
 
