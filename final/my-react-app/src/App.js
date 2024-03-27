@@ -20,7 +20,7 @@ function App() {
       {/* Header */}
       <header className="App-header">
         <div className="header-content">
-          <p>Content inside the header with transparent white color</p>
+          <h1 className="welcome" >Welcome to Math Learning System!</h1>
           <a
             className="App-link"
             href="https://reactjs.org"
