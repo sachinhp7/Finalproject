@@ -20,12 +20,18 @@ function App() {
       {/* Header */}
       <header className="App-header">
         <div className="header-content">
-          <h1 className="welcome" >Welcome to Math Learning System!</h1>
+          <h1 className="welcome">Welcome to Math Learning System!</h1>
           <p className="welpara">Practice and improve your math skills.</p>
           
         </div>
+        <di><button className="header-button">Get Started</button></di>
+        
       </header>
+
+      
+      
     </div>
+    
   );
 }
 
