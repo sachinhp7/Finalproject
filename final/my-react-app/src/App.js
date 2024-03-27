@@ -1,7 +1,12 @@
+import { useNavigate } from 'react-router-dom';
 import './App.css';
 import mylogo from './logo.png';
 
 function App() {
+
+const navigate = useNavigate();
+
+
   return (
     <div className="App">
       {/* Content box with black background */}
@@ -24,7 +29,7 @@ function App() {
           <p className="welpara">Practice and improve your math skills.</p>
           
         </div>
-        <di><button className="header-button">Get Started</button></di>
+        <di><button className="header-button" onClick={()=>navigate('WelcomePage')}>Get Started</button></di>
         
       </header>
 
