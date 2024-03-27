@@ -21,14 +21,8 @@ function App() {
       <header className="App-header">
         <div className="header-content">
           <h1 className="welcome" >Welcome to Math Learning System!</h1>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
+          <p className="welpara">Practice and improve your math skills.</p>
+          
         </div>
       </header>
     </div>
