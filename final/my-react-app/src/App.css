@@ -79,3 +79,9 @@
 .nav-button:hover {
   text-decoration: underline; /* Underline on hover */
 }
+/* App.css */
+.header-content {
+  background-color: rgba(255, 255, 255, 0.5); /* Transparent white color */
+  padding: 20px;
+  text-align: center;
+}

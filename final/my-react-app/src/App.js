@@ -1,4 +1,3 @@
-
 import './App.css';
 import mylogo from './logo.png';
 
@@ -10,7 +9,6 @@ function App() {
         {/* Logo on the left */}
         <img src={mylogo} className="logo" alt="logo" />
         <div className="content">
-          
           {/* Navigation bar on the right */}
           <nav className="navigation">
             <button className="nav-button">Home</button>
@@ -21,18 +19,17 @@ function App() {
       </div>
       {/* Header */}
       <header className="App-header">
-        
-        <p>
-          
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          
-        </a>
+        <div className="header-content">
+          <p>Content inside the header with transparent white color</p>
+          <a
+            className="App-link"
+            href="https://reactjs.org"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Learn React
+          </a>
+        </div>
       </header>
     </div>
   );
