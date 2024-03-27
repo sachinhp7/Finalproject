@@ -14,7 +14,9 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-image: url('C:\Final year project\Final project\finalproject\final\my-react-app\src\background_img.jpeg'); /* Replace 'your-image-url.jpg' with the URL or path to your background image */
+  background-size: cover;
+  background-position: center;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -23,6 +25,7 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+
 
 .App-link {
   color: #61dafb;
@@ -37,10 +40,11 @@
   }
 }
 
+/* App.css */
 .content-box {
   color: white;
   padding: 20px;
-  margin-bottom: 20px;
+  
   display: flex;
   align-items: center; /* Align items vertically */
 }
