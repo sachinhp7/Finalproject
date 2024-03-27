@@ -1,8 +1,12 @@
 import React from 'react';
 import './App.css';
+import './WelcomePage.css';
 import mylogo from './logo.png';
 
 const WelcomePage = () => {
+  
+
+
   return (
     <div className="App">
       {/* Content box with black background */}
@@ -18,8 +22,15 @@ const WelcomePage = () => {
           </nav>
         </div>
       </div>
+      {/* Header */}
+      <header className="green-background"> 
+        
+        
+      </header>
+
+      
+      
     </div>
   );
 }
-
-export default  WelcomePage;
+export default WelcomePage;

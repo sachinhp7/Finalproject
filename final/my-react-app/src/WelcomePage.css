@@ -1,0 +1,15 @@
+/* WelcomePage.css */
+
+.green-background {
+ background-image: url('C:\Final year project\Final project\finalproject\final\my-react-app\src\logincover.jpg'); /* Replace 'your-image-url.jpg' with the URL or path to your background image */
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  }
+  
