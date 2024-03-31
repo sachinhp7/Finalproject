@@ -1,10 +1,11 @@
+// WelcomePage.js
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './App.css';
 import './WelcomePage.css';
 import mylogo from './logo.png';
 
-const WelcomePage = () => {
+const StudentLogin = () => {
   const navigate = useNavigate();
 
   return (
@@ -29,8 +30,8 @@ const WelcomePage = () => {
           <p className="welpara">Solve math problems with ease</p>
         </div>
         <div>
-          {/* Update the onClick handler to navigate to '/LoginPage' */}
-          <button className="header-button" onClick={() => navigate('/LoginPage')}>
+          {/* Update the onClick handler to navigate to 'StudentLogin' */}
+          <button className="header-button" onClick={() => navigate('StudentLogin')}>
             Login
           </button>
         </div>
@@ -44,4 +45,4 @@ const WelcomePage = () => {
   );
 };
 
-export default WelcomePage;
+export default StudentLogin;

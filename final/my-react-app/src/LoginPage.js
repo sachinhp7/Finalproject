@@ -4,8 +4,14 @@ import './App.css';
 import './WelcomePage.css';
 import mylogo from './logo.png';
 
-const WelcomePage = () => {
+const LoginPage = () => {
   const navigate = useNavigate();
+
+  const handleLogin = () => {
+    // Add your login logic here
+    // For now, just navigate to another page
+    navigate('/dashboard'); // Example navigation to a dashboard page
+  };
 
   return (
     <div className="App">
@@ -22,26 +28,8 @@ const WelcomePage = () => {
           </nav>
         </div>
       </div>
-      {/* Header */}
-      <header className="green-background">
-        <div className="header-content">
-          <h1 className="welcome">Welcome to Math Solver</h1>
-          <p className="welpara">Solve math problems with ease</p>
-        </div>
-        <div>
-          {/* Update the onClick handler to navigate to '/LoginPage' */}
-          <button className="header-button" onClick={() => navigate('/LoginPage')}>
-            Login
-          </button>
-        </div>
-        <div>
-          <button className="header-button" onClick={() => navigate('')}>
-            SignUp
-          </button>
-        </div>
-      </header>
-    </div>
+     </div>
   );
 };
 
-export default WelcomePage;
+export default LoginPage;
