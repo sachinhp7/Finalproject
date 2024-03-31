@@ -35,7 +35,7 @@ const WelcomePage = () => {
           </button>
         </div>
         <div>
-          <button className="header-button" onClick={() => navigate('')}>
+          <button className="header-button" onClick={() => navigate('/SignUp')}>
             SignUp
           </button>
         </div>
