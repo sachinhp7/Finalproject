@@ -4,7 +4,7 @@ import './App.css';
 import './WelcomePage.css'; // Assuming you have a WelcomePage.css file
 import './LoginPage.css'; // Import LoginPage.css
 import mylogo from './logo.png';
-import { FaSignInAlt } from 'react-icons/fa'; // Import the icon from react-icons
+import { FaSignInAlt, FaUser, FaLock } from 'react-icons/fa'; // Import the icons from react-icons
 import userImage from './userlogin.png'; // Corrected import statement
 
 const LoginPage = () => {
@@ -49,29 +49,31 @@ const LoginPage = () => {
               <h2 className='h2'>Login</h2>
               <img src={userImage} alt="User" className="user-image" />
               <div className="form-group">
-                <label htmlFor="username">Username:</label>
-                 <br></br>
+                <label htmlFor="username" className="label"><FaUser /> Username</label>
                 <input
                   type="text"
                   id="username"
                   value={username}
                   onChange={(e) => setUsername(e.target.value)}
                   required
+                  className="input-field"
                 />
               </div>
               <div className="form-group">
-                <label htmlFor="password">Password:</label>
-                <br></br>
+                <label htmlFor="password" className="label"><FaLock /> Password</label>
                 <input
                   type="password"
                   id="password"
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   required
+                  className="input-field"
                 />
               </div>
               {error && <p className="error-message">{error}</p>}
-              <button type="submit" className="login-button">Login <FaSignInAlt /></button>
+              <button type="submit" className="login-button">
+                <FaSignInAlt /> Login
+              </button>
             </form>
           </div>
         </div>
