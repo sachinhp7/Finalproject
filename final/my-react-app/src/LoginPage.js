@@ -4,6 +4,8 @@ import './App.css';
 import './WelcomePage.css'; // Assuming you have a WelcomePage.css file
 import './LoginPage.css'; // Import LoginPage.css
 import mylogo from './logo.png';
+import { FaSignInAlt } from 'react-icons/fa'; // Import the icon from react-icons
+import userImage from './userlogin.png'; // Corrected import statement
 
 const LoginPage = () => {
   const navigate = useNavigate();
@@ -45,8 +47,10 @@ const LoginPage = () => {
           <div className="login-form">
             <form onSubmit={handleLogin}>
               <h2 className='h2'>Login</h2>
+              <img src={userImage} alt="User" className="user-image" />
               <div className="form-group">
                 <label htmlFor="username">Username:</label>
+                 <br></br>
                 <input
                   type="text"
                   id="username"
@@ -57,6 +61,7 @@ const LoginPage = () => {
               </div>
               <div className="form-group">
                 <label htmlFor="password">Password:</label>
+                <br></br>
                 <input
                   type="password"
                   id="password"
@@ -66,7 +71,7 @@ const LoginPage = () => {
                 />
               </div>
               {error && <p className="error-message">{error}</p>}
-              <button type="submit" className="login-button">Login</button>
+              <button type="submit" className="login-button">Login <FaSignInAlt /></button>
             </form>
           </div>
         </div>

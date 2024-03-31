@@ -21,3 +21,46 @@
 .h2{
     color: black;
 }
+
+/* LoginPage.css */
+
+/* Style for the login form */
+.login-form {
+    width: 300px; /* Adjust width as needed */
+    margin: auto; /* Center the form horizontally */
+  }
+  
+  /* Style for the form groups (labels and inputs) */
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  /* Style for the labels */
+  .form-group label {
+    display: inline-block; /* Make labels inline */
+    width: 100px; /* Set label width */
+    text-align: left; /* Align labels to the left */
+  }
+  
+  /* Style for the inputs */
+  .form-group input {
+    width: calc(100% - 100px); /* Calculate input width to fill remaining space */
+  }
+  
+  /* Style for the login button */
+  .login-button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Style for the icon */
+  .login-button svg {
+    margin-left: 5px; /* Adjust icon margin as needed */
+  }
+
+  
+  .user-image{
+    height: 100px;
+  }
