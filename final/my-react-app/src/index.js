@@ -8,6 +8,7 @@ import LoginPage from './LoginPage'; // Import LoginPage component
 import StudentLogin from './StudentLogin';
 import Router from './Router';
 import SignUp from './SignUp';
+import Dashboard from './Dashboard';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -20,6 +21,7 @@ root.render(
       <Route path="/Router" element={<Router />} />
       <Route path="/StudentLogin" element={<StudentLogin/>} />
       <Route path='/SignUp' element={<SignUp />} /> 
+      <Route path='/Dashboard' element={<Dashboard />} /> 
     </Routes>
   </BrowserRouter>
 );
