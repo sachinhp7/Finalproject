@@ -40,20 +40,20 @@ const Dashboard = () => {
         <div className="dashboard-grid">
           <div className="dashboard-item" onClick={() => handleItemClick('/item1')}>
             <img src={quizdashboard} alt="Item 1" />
-            <p>Item 1</p>
+            <p>Quiz</p>
           </div>
           <div className="dashboard-item" onClick={() => handleItemClick('/item2')}>
             {/* Use correct image variable here */}
             <img src={progressdashboard} alt="Item 2" />
-            <p>Item 2</p>
+            <p>Progress</p>
           </div>
           <div className="dashboard-item" onClick={() => handleItemClick('/item3')}>
             <img src={resourcesdashboard} alt="Item 3" />
-            <p>Item 3</p>
+            <p>Resources</p>
           </div>
           <div className="dashboard-item" onClick={() => handleItemClick('/item4')}>
             <img src={recommendationdashboard} alt="Item 4" />
-            <p>Item 4</p>
+            <p>Recomendation</p>
           </div>
         </div>
       </div>
