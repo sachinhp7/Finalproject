@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import './App.css';
 import './WelcomePage.css';
 import mylogo from './logo.png';
+import './Dashboard.css';
 
 const Dashboard = () => {
   const navigate = useNavigate();
@@ -22,7 +23,18 @@ const Dashboard = () => {
           </nav>
         </div>
       </div>
-     
+      
+      {/* Dashboard content */}
+      <div className="dashboard-content">
+        <h1>Dashboard</h1>
+        {/* 2x2 table layout */}
+        <div className="dashboard-grid">
+          <div className="dashboard-item">Item 1</div>
+          <div className="dashboard-item">Item 2</div>
+          <div className="dashboard-item">Item 3</div>
+          <div className="dashboard-item">Item 4</div>
+        </div>
+      </div>
     </div>
   );
 };
