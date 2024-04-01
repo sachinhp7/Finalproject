@@ -35,7 +35,7 @@ const Dashboard = () => {
       
       {/* Dashboard content */}
       <div className="dashboard-content">
-        <h1>Dashboard</h1>
+        <h1 className='dash'>Dashboard</h1>
         {/* 2x2 table layout */}
         <div className="dashboard-grid">
           <div className="dashboard-item" onClick={() => handleItemClick('/item1')}>
