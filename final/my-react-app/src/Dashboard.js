@@ -4,9 +4,18 @@ import './App.css';
 import './WelcomePage.css';
 import mylogo from './logo.png';
 import './Dashboard.css';
+import quizdashboard from './quizdashboard.jpg'; // Correct import path
+import progressdashboard from './progressdashboard.jpg'; // Correct import path
+import resourcesdashboard from './resourcesdashboard.jpg'; // Correct import path
+import recommendationdashboard from './recommendationdashboard.jpg'; // Correct import path
 
 const Dashboard = () => {
   const navigate = useNavigate();
+
+  // Function to handle navigation when an item is clicked
+  const handleItemClick = (route) => {
+    navigate(route);
+  };
 
   return (
     <div className="App">
@@ -29,10 +38,23 @@ const Dashboard = () => {
         <h1>Dashboard</h1>
         {/* 2x2 table layout */}
         <div className="dashboard-grid">
-          <div className="dashboard-item">Item 1</div>
-          <div className="dashboard-item">Item 2</div>
-          <div className="dashboard-item">Item 3</div>
-          <div className="dashboard-item">Item 4</div>
+          <div className="dashboard-item" onClick={() => handleItemClick('/item1')}>
+            <img src={quizdashboard} alt="Item 1" />
+            <p>Item 1</p>
+          </div>
+          <div className="dashboard-item" onClick={() => handleItemClick('/item2')}>
+            {/* Use correct image variable here */}
+            <img src={progressdashboard} alt="Item 2" />
+            <p>Item 2</p>
+          </div>
+          <div className="dashboard-item" onClick={() => handleItemClick('/item3')}>
+            <img src={resourcesdashboard} alt="Item 3" />
+            <p>Item 3</p>
+          </div>
+          <div className="dashboard-item" onClick={() => handleItemClick('/item4')}>
+            <img src={recommendationdashboard} alt="Item 4" />
+            <p>Item 4</p>
+          </div>
         </div>
       </div>
     </div>
