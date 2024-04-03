@@ -6,6 +6,7 @@ import mylogo from './logo.png';
 import './Quiz.css';
 import './Question1.css';
 
+
 const Question2 = () => {
   const navigate = useNavigate();
   const [selectedOption, setSelectedOption] = useState(null);
@@ -25,10 +26,10 @@ const Question2 = () => {
 
   // MCQ options
   const options = [
-    { value: 'The set of digits in your phone number', label: 'The set of digits in your phone number' }, 
-    { value: 'The set of months in a year.', label: 'The set of months in a year.' },
-    { value: 'The set of all integers less than 10', label: 'The set of all integers less than 10' },
-    { value: 'The set of all possible scores when rolling a die.', label: 'The set of all possible scores when rolling a die.' },
+    { value: '1', label: 'The set of digits in your phone number' }, 
+    { value: '2', label: 'The set of months in a year.' },
+    { value: '3', label: 'The set of all integers less than 10' },
+    { value: '4', label: 'The set of all possible scores when rolling a die.' },
   ];
 
   return (

@@ -19,10 +19,10 @@ const Question1 = () => {
 
   // MCQ options
   const options = [
-    { value: 'The set of all even numbers.', label: 'The set of all even numbers.' }, 
-    { value: 'The set of all multiples of 5.', label: 'The set of all multiples of 5.' },
-    { value: 'The set of all planets in our solar system.', label: 'The set of all planets in our solar system.' },
-    { value: 'The set of all prime numbers.', label: 'The set of all prime numbers.' },
+    { value: '1', label: 'The set of all even numbers.' }, 
+    { value: '2', label: 'The set of all multiples of 5.' },
+    { value: '3', label: 'The set of all planets in our solar system.' },
+    { value: '4', label: 'The set of all prime numbers.' },
   ];
 
   return (

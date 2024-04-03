@@ -12,6 +12,7 @@ import Dashboard from './Dashboard';
 import Quiz from './Quiz';
 import Question1 from './Question1';
 import Question2 from './Question2';
+import Question3 from './Question3';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -28,6 +29,7 @@ root.render(
       <Route path='/Quiz' element={<Quiz />} />
       <Route path='/Question1' element={<Question1 />} />
       <Route path='/Question2' element={<Question2 />} />
+      <Route path='/Question3' element={<Question3 />} />
 
     </Routes>
   </BrowserRouter>
