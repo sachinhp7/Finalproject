@@ -34,10 +34,12 @@ const Quiz = () => {
       <div className="quiz-instructions">
         <h1>Quiz Instructions</h1>
         <div className='quiz-content'>
-        <p></p>
+        <p> <h2>Answer all questions</h2></p>
+        <p>Make sure to attempt all questions to get your score at the end.</p>
         </div>
         <div className='quiz-content'>
-        <p></p>
+        <p> <h2>No time limit</h2></p>
+        <p>Take your time to think through each question carefully.</p>
         </div>
         {/* Start Quiz button */}
         <button className="start-quiz-button" onClick={startQuiz}>Start Quiz</button>
