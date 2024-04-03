@@ -1,9 +1,11 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom'; // Import useNavigate
 import './App.css';
 import './WelcomePage.css';
 import mylogo from './logo.png';
 import './Quiz.css';
+import { FaQuestionCircle } from 'react-icons/fa'; // Import FaQuestionCircle icon
+import Question1 from './Question1';
 
 const Quiz = () => {
   const navigate = useNavigate();
@@ -11,7 +13,7 @@ const Quiz = () => {
   // Function to handle navigation to start the quiz
   const startQuiz = () => {
     // Navigate to the quiz page when the Start Quiz button is clicked
-    navigate('/quiz-start');
+    navigate('/Question1');
   };
 
   return (
@@ -34,15 +36,16 @@ const Quiz = () => {
       <div className="quiz-instructions">
         <h1>Quiz Instructions</h1>
         <div className='quiz-content'>
-        <p> <h2>Answer all questions</h2></p>
-        <p>Make sure to attempt all questions to get your score at the end.</p>
+          <h2><FaQuestionCircle className="instruction-icon" /> Answer all questions</h2>
+          <p>Make sure to attempt all questions to get your score at the end.</p>
         </div>
         <div className='quiz-content'>
-        <p> <h2>No time limit</h2></p>
-        <p>Take your time to think through each question carefully.</p>
+          <h2><FaQuestionCircle className="instruction-icon" /> No time limit</h2>
+          <p>Take your time to think through each question carefully.</p>
         </div>
-        {/* Start Quiz button */}
-        <button className="start-quiz-button" onClick={startQuiz}>Start Quiz</button>
+        <div className="start-quiz-button-container">
+          <button className="start-quiz-button" onClick={startQuiz}>Start Quiz</button>
+        </div>
       </div>
     </div>
   );

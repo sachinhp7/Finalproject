@@ -10,6 +10,7 @@ import Router from './Router';
 import SignUp from './SignUp';
 import Dashboard from './Dashboard';
 import Quiz from './Quiz';
+import Question1 from './Question1';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -24,6 +25,7 @@ root.render(
       <Route path='/SignUp' element={<SignUp />} /> 
       <Route path='/Dashboard' element={<Dashboard />} /> 
       <Route path='/Quiz' element={<Quiz />} />
+      <Route path='/Question1' element={<Question1 />} />
     </Routes>
   </BrowserRouter>
 );
