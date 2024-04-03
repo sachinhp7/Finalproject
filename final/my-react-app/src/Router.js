@@ -7,6 +7,7 @@ import LoginPage from './LoginPage'; // Assuming LoginPage exists
 import StudentLogin from './StudentLogin'; // Import StudentLogin component
 import SignUp from './SignUp';
 import Dashboard from './Dashboard';
+import Quiz from './Quiz';
 
 const Router = () => {
   return (
@@ -16,7 +17,8 @@ const Router = () => {
       <Route path="/LoginPage" element={<LoginPage />} /> 
       <Route path="/StudentLogin" element={<StudentLogin />} /> {/* Route for StudentLogin */}
       <Route path='/SignUp' element={<SignUp />} /> 
-      <Route path='/Dashboard' element={<Dashboard />} /> 
+      <Route path='/Dashboard' element={<Dashboard />} />
+      <Route path='/Quiz' element={<Quiz />} /> 
     </Routes>
   );
 };

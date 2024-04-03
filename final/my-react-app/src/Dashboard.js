@@ -8,6 +8,7 @@ import quizdashboard from './quizdashboard.jpg'; // Correct import path
 import progressdashboard from './progressdashboard.jpg'; // Correct import path
 import resourcesdashboard from './resourcesdashboard.jpg'; // Correct import path
 import recommendationdashboard from './recommendationdashboard.jpg'; // Correct import path
+import Quiz from './Quiz';
 
 const Dashboard = () => {
   const navigate = useNavigate();
@@ -38,7 +39,7 @@ const Dashboard = () => {
         <h1 className='dash'>Dashboard</h1>
         {/* 2x2 table layout */}
         <div className="dashboard-grid">
-          <div className="dashboard-item" onClick={() => handleItemClick('/item1')}>
+          <div className="dashboard-item" onClick={() => handleItemClick('/Quiz')}>
             <img src={quizdashboard} alt="Item 1" />
             <p>Quiz</p>
           </div>
