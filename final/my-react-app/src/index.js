@@ -16,6 +16,8 @@ import Question3 from './Question3';
 import Question4 from './Question4';
 import Question5 from './Question5';
 import Question6 from './Question6';
+import Question7 from './Question7';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -36,6 +38,8 @@ root.render(
       <Route path='/Question4' element={<Question4 />} />
       <Route path='/Question5' element={<Question5 />} />
       <Route path='/Question6' element={<Question6 />} />
+      <Route path='/Question7' element={<Question7 />} />
+      
 
     </Routes>
   </BrowserRouter>
