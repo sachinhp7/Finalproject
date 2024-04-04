@@ -21,6 +21,7 @@ import Question11 from './Question11';
 import Question12 from './Question12';
 import Question13 from './Question13';
 import Question14 from './Question14';
+import Question15 from './Question15';
 
 
 const Router = () => {
@@ -46,6 +47,7 @@ const Router = () => {
       <Route path='/Question12' element={<Question12 />} />
       <Route path='/Question13' element={<Question13 />} />
       <Route path='/Question14' element={<Question14 />} />
+      <Route path='/Question15' element={<Question15 />} />
      
     </Routes>
   );
