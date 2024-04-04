@@ -6,7 +6,7 @@ import mylogo from './logo.png';
 import './Quiz.css';
 import './Question1.css';
 
-const Question10 = () => {
+const Question11 = () => {
   const navigate = useNavigate();
   const [selectedOption, setSelectedOption] = useState(null);
 
@@ -14,21 +14,21 @@ const Question10 = () => {
   const nextQuestion = () => {
     // Here you would typically handle the logic to move to the next question or display the result
     // For demonstration purposes, let's navigate to Question 3
-    navigate('/Question11');
+    navigate('/Question12');
   };
 
   const backQuestion = () => {
     // Here you would typically handle the logic to move to the previous question
     // For demonstration purposes, let's navigate back to Question 1
-    navigate('/Question9');
+    navigate('/Question10');
   };
 
   // MCQ options
   const options = [
-    { value: '1', label: 'x^(a + b)' }, 
-    { value: '2', label: 'x^(a - b)' },
-    { value: '3', label: 'x^ab' },
-    { value: '4', label: 'x^(b/a)' },
+    { value: '1', label: 'x^2 + 6x + 8' }, 
+    { value: '2', label: 'x^2 + 4x + 2' },
+    { value: '3', label: '2x^2 + 6' },
+    { value: '4', label: 'x^2 + 2x' },
   ];
 
   return (
@@ -52,11 +52,11 @@ const Question10 = () => {
         {/* Content */}
         <div className='c'>
           <div className="question">
-            <center><h1>Question 10</h1></center>
+            <center><h1>Question 11</h1></center>
           </div>
 
           <div className="options">
-          <p className='h'>How do we simplify (x^a)^b?</p>
+          <p className='h'>What is the product of (x + 2) and (x + 4)?</p>
 
 
             <ul>
@@ -91,4 +91,4 @@ const Question10 = () => {
   );
 };
 
-export default Question10;
+export default Question11;
