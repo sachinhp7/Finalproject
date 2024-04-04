@@ -12,6 +12,7 @@ import Question1 from './Question1';
 import Question2 from './Question2';
 import Question3 from './Question3';
 import Question4 from './Question4';
+import Question6 from './Question6';
 
 const Router = () => {
   return (
@@ -27,6 +28,7 @@ const Router = () => {
       <Route path='/Question2' element={<Question2 />} />
       <Route path='/Question3' element={<Question3 />} />
       <Route path='/Question4' element={<Question4 />} />
+      <Route path='/Question6' element={<Question6 />} />
     </Routes>
   );
 };
