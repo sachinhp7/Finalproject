@@ -6,7 +6,7 @@ import mylogo from './logo.png';
 import './Quiz.css';
 import './Question1.css';
 
-const Question3 = () => {
+const Question4 = () => {
   const navigate = useNavigate();
   const [selectedOption, setSelectedOption] = useState(null);
 
@@ -14,19 +14,19 @@ const Question3 = () => {
   const nextQuestion = () => {
     // Here you would typically handle the logic to move to the next question or display the result
     // For demonstration purposes, let's navigate to Question 3
-    navigate('/Question4');
+    navigate('/Question5');
   };
 
   const backQuestion = () => {
     // Here you would typically handle the logic to move to the previous question
     // For demonstration purposes, let's navigate back to Question 1
-    navigate('/Question2');
+    navigate('/Question3');
   };
 
   // MCQ options
   const options = [
-    { value: '1', label: 'Empty set' }, 
-    { value: '2', label: 'Finite set' },
+    { value: '1', label: 'Univeral set' }, 
+    { value: '2', label: 'Infinite set' },
     { value: '3', label: 'Both A and B' },
     { value: '4', label: 'None of the above' },
   ];
@@ -52,11 +52,11 @@ const Question3 = () => {
         {/* Content */}
         <div className='c'>
           <div className="question">
-            <center><h1>Question 3</h1></center>
+            <center><h1>Question 4</h1></center>
           </div>
 
           <div className="options">
-            <p className='h'>A set with 10 elements is considered to be:</p>
+            <p className='h'>A set that keeps growing and has no end is considered to be:</p>
             <ul>
               {options.map((option, index) => (
                 <li key={index}>
@@ -89,4 +89,4 @@ const Question3 = () => {
   );
 };
 
-export default Question3;
+export default Question4;
