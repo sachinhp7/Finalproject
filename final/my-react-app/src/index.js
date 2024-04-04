@@ -23,6 +23,7 @@ import Question10 from './Question10';
 import Question11 from './Question11';
 import Question12 from './Question12';
 import Question13 from './Question13';
+import Question14 from './Question14';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -50,6 +51,7 @@ root.render(
       <Route path='/Question11' element={<Question11/>} />
       <Route path='/Question12' element={<Question12 />} />
       <Route path='/Question13' element={<Question13 />} />
+      <Route path='/Question14' element={<Question14 />} />
       
 
     </Routes>
