@@ -14,13 +14,13 @@ const Question12 = () => {
   const nextQuestion = () => {
     // Here you would typically handle the logic to move to the next question or display the result
     // For demonstration purposes, let's navigate to Question 3
-    navigate('/Question12');
+    navigate('/Question13');
   };
 
   const backQuestion = () => {
     // Here you would typically handle the logic to move to the previous question
     // For demonstration purposes, let's navigate back to Question 1
-    navigate('/Question10');
+    navigate('/Question11');
   };
 
   // MCQ options
