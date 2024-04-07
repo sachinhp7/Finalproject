@@ -25,9 +25,16 @@ import Question12 from './Question12';
 import Question13 from './Question13';
 import Question14 from './Question14';
 import Question15 from './Question15';
+import Score from './Score';
+import { ScoreProvider } from './ScoreContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+
+
+
+
+  <ScoreProvider>
   <BrowserRouter>
     <Routes>
       <Route path='/' element={<App />} />
@@ -54,10 +61,15 @@ root.render(
       <Route path='/Question13' element={<Question13 />} />
       <Route path='/Question14' element={<Question14 />} />
       <Route path='/Question15' element={<Question15 />} />
+      <Route path="/Score" element={<Score />} />
       
 
     </Routes>
   </BrowserRouter>
+  </ScoreProvider>
 );
+
+
+
 
 reportWebVitals();

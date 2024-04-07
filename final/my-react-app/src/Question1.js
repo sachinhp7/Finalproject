@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { useScore } from './ScoreContext'; // Import useScore hook
 import './App.css';
 import './WelcomePage.css';
 import mylogo from './logo.png';
@@ -9,11 +10,11 @@ import './Question1.css';
 const Question1 = () => {
   const navigate = useNavigate();
   const [selectedOption, setSelectedOption] = useState(null);
+  const { addScore } = useScore(); // Use the addScore function from the context
 
   // Function to handle navigation to the next question or result page
   const nextQuestion = () => {
-    // Here you would typically handle the logic to move to the next question or display the result
-    // For demonstration purposes, let's navigate to Question 2
+    addScore(1, selectedOption); // Add selected answer to context
     navigate('/Question2');
   };
 

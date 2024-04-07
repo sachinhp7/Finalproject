@@ -1,19 +1,28 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { useScore } from './ScoreContext'; // Import the useScore hook
 import './App.css';
 import './WelcomePage.css';
 import mylogo from './logo.png';
 import './Quiz.css';
 import './Question1.css';
 
+
 const Question15 = () => {
   const navigate = useNavigate();
+  const { addScore } = useScore();
   const [selectedOption, setSelectedOption] = useState(null);
+
+  const handleFinish = () => {
+    addScore(15, selectedOption);
+    navigate('/Score');
+  };
 
   // Function to handle navigation to the next question or result page
   const nextQuestion = () => {
     // Here you would typically handle the logic to move to the next question or display the result
     // For demonstration purposes, let's navigate to Question 3
+    addScore(15, selectedOption); // Add selected answer to context
     navigate('/Score');
   };
 
@@ -56,8 +65,7 @@ const Question15 = () => {
           </div>
 
           <div className="options">
-          <p className='h'>What is the result of expanding (p - 4) (p - 3)?</p>
-
+            <p className='h'>What is the result of expanding (p - 4) (p - 3)?</p>
 
             <ul>
               {options.map((option, index) => (

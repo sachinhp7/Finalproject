@@ -5,16 +5,21 @@ import './WelcomePage.css';
 import mylogo from './logo.png';
 import './Quiz.css';
 import './Question1.css';
+import { useScore } from './ScoreContext'; // Import useScore hook
 
 
 const Question2 = () => {
   const navigate = useNavigate();
   const [selectedOption, setSelectedOption] = useState(null);
+  const { addScore } = useScore(); // Use the addScore function from the context
+
 
   // Function to handle navigation to the next question or result page
   const nextQuestion = () => {
     // Here you would typically handle the logic to move to the next question or display the result
     // For demonstration purposes, let's navigate to Question 3
+    addScore(2, selectedOption); // Add selected answer to context
+   
     navigate('/Question3');
   };
 
