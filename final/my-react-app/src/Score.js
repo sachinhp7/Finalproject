@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { useHistory } from 'react-router-dom'; // Correct import statement for useHistory
+
 import { useScore } from './ScoreContext';
 import './Score.css'; // Import CSS file for styling
 import './App.css';
@@ -6,15 +8,20 @@ import './WelcomePage.css';
 import mylogo from './logo.png';
 import './Quiz.css';
 import './Question1.css';
+import ResultPage from './ResultPage'; // Import the ResultPage component
 
 const Score = () => {
   const { scores } = useScore();
+  const [submitted, setSubmitted] = useState(false);
 
   // Function to handle submitting the score
   const handleSubmit = () => {
-    // Add logic here to handle submitting the score
-    console.log('Score submitted!');
+    setSubmitted(true);
   };
+
+  if (submitted) {
+    return <ResultPage scores={scores} />;
+  }
 
   return (
     <div className="App blue-background">
@@ -52,7 +59,7 @@ const Score = () => {
         
       </div>
       {/* Submit button */}
-     <center> <button className="submit-button" onClick={handleSubmit}>Submit</button></center>
+      <center> <button className="submit-button" onClick={handleSubmit}>Submit</button></center>
     </div>
   );
 };

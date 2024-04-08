@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useScore } from './ScoreContext'; // Import useScore hook
+import { useScore } from './ScoreContext';
 import './App.css';
 import './WelcomePage.css';
 import mylogo from './logo.png';
@@ -10,21 +10,21 @@ import './Question1.css';
 const Question1 = () => {
   const navigate = useNavigate();
   const [selectedOption, setSelectedOption] = useState(null);
-  const { addScore } = useScore(); // Use the addScore function from the context
+  const { addScore } = useScore();
 
-  // Function to handle navigation to the next question or result page
+  // Define options with correct answer information
+  const options = [
+    { value: '1', label: 'The set of all even numbers.', correct: false }, 
+    { value: '2', label: 'The set of all multiples of 5.', correct: false },
+    { value: '3', label: 'The set of all planets in our solar system.', correct: false },
+    { value: '4', label: 'The set of all prime numbers.', correct: true }, // Correct answer
+  ];
+
   const nextQuestion = () => {
-    addScore(1, selectedOption); // Add selected answer to context
+    // Add selected answer and correctness to context
+    addScore(1, selectedOption, options.find(option => option.value === selectedOption)?.correct);
     navigate('/Question2');
   };
-
-  // MCQ options
-  const options = [
-    { value: '1', label: 'The set of all even numbers.' }, 
-    { value: '2', label: 'The set of all multiples of 5.' },
-    { value: '3', label: 'The set of all planets in our solar system.' },
-    { value: '4', label: 'The set of all prime numbers.' },
-  ];
 
   return (
     <div className="App">

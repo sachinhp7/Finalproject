@@ -27,6 +27,7 @@ import Question14 from './Question14';
 import Question15 from './Question15';
 import Score from './Score';
 import { ScoreProvider } from './ScoreContext';
+import ResultPage from './ResultPage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -62,6 +63,8 @@ root.render(
       <Route path='/Question14' element={<Question14 />} />
       <Route path='/Question15' element={<Question15 />} />
       <Route path="/Score" element={<Score />} />
+      <Route path="/ResultPage" element={<ResultPage />} />
+
       
 
     </Routes>

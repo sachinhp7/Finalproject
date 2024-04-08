@@ -48,7 +48,7 @@ const Dashboard = () => {
             <img src={progressdashboard} alt="Item 2" />
             <p>Progress</p>
           </div>
-          <div className="dashboard-item" onClick={() => handleItemClick('/item3')}>
+          <div className="dashboard-item" onClick={() => handleItemClick('/Resources')}>
             <img src={resourcesdashboard} alt="Item 3" />
             <p>Resources</p>
           </div>
