@@ -8,8 +8,8 @@ export const useScore = () => useContext(ScoreContext);
 export const ScoreProvider = ({ children }) => {
   const [scores, setScores] = useState([]);
 
-  const addScore = (questionNumber, selectedOption) => {
-    setScores([...scores, { questionNumber, selectedOption }]);
+  const addScore = (questionNumber, selectedOption, correct) => {
+    setScores([...scores, { questionNumber, selectedOption, correct }]);
   };
 
   return (

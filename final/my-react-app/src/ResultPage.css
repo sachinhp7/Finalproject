@@ -1,0 +1,77 @@
+/* ResultPage.css */
+
+/* Container styles */
+
+  .navigation {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .nav-button {
+    margin-left: 10px;
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  /* Result container styles */
+  .result-container {
+    margin-top: 20px;
+    background-color: #f2f2f2; /* Light gray */
+    border-radius: 10px;
+    padding: 20px;
+    width: 80%;
+  }
+  
+  .result-stats {
+    margin-bottom: 20px;
+  }
+  
+  .stat-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .stat-label {
+    font-weight: bold;
+  }
+  
+  .stat-value {
+    color: #4CAF50; /* Green */
+  }
+  
+  .result-details {
+    border-top: 2px solid #ccc;
+    padding-top: 20px;
+  }
+  
+  .answer-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .answer-item {
+    margin-bottom: 10px;
+  }
+  
+  .correct {
+    color: #4CAF50; /* Green */
+    font-weight: bold;
+  }
+  
+  .incorrect {
+    color: #FF5733; /* Red */
+    font-weight: bold;
+  }
+  
+  .result-container{
+
+    margin-left: 125px;
+  }

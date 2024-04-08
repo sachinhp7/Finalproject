@@ -16,7 +16,8 @@ const Question6 = () => {
   const nextQuestion = () => {
     // Here you would typically handle the logic to move to the next question or display the result
     // For demonstration purposes, let's navigate to Question 3
-    addScore(6, selectedOption); // Add selected answer to context
+    const isCorrect = options.find(option => option.value === selectedOption)?.correct || false;
+    addScore(6, selectedOption,isCorrect); // Add selected answer to context
     navigate('/Question7');
   };
 
@@ -28,10 +29,10 @@ const Question6 = () => {
 
   // MCQ options
   const options = [
-    { value: '1', label: '2 * 2 * 2' }, 
-    { value: '2', label: '2 + 2 + 2' },
-    { value: '3', label: '3*3' },
-    { value: '4', label: '2/3' },
+    { value: '1', label: '2 * 2 * 2', correct: true }, 
+    { value: '2', label: '2 + 2 + 2', correct: false },
+    { value: '3', label: '3*3', correct: false },
+    { value: '4', label: '2/3', correct: false },
   ];
 
   return (

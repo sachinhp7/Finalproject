@@ -16,13 +16,17 @@ const Question1 = () => {
   const options = [
     { value: '1', label: 'The set of all even numbers.', correct: false }, 
     { value: '2', label: 'The set of all multiples of 5.', correct: false },
-    { value: '3', label: 'The set of all planets in our solar system.', correct: false },
-    { value: '4', label: 'The set of all prime numbers.', correct: true }, // Correct answer
+    { value: '3', label: 'The set of all planets in our solar system.', correct: true },
+    { value: '4', label: 'The set of all prime numbers.', correct: false }, // Correct answer
   ];
 
   const nextQuestion = () => {
+    // Check if the selected option is correct
+    const isCorrect = options.find(option => option.value === selectedOption)?.correct || false;
+    
     // Add selected answer and correctness to context
-    addScore(1, selectedOption, options.find(option => option.value === selectedOption)?.correct);
+    addScore(1, selectedOption, isCorrect);
+    
     navigate('/Question2');
   };
 

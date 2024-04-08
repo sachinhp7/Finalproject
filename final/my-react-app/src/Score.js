@@ -1,14 +1,10 @@
 import React, { useState } from 'react';
-import { useHistory } from 'react-router-dom'; // Correct import statement for useHistory
-
 import { useScore } from './ScoreContext';
-import './Score.css'; // Import CSS file for styling
+import './Score.css';
 import './App.css';
 import './WelcomePage.css';
 import mylogo from './logo.png';
-import './Quiz.css';
-import './Question1.css';
-import ResultPage from './ResultPage'; // Import the ResultPage component
+import ResultPage from './ResultPage';
 
 const Score = () => {
   const { scores } = useScore();
@@ -20,7 +16,11 @@ const Score = () => {
   };
 
   if (submitted) {
-    return <ResultPage scores={scores} />;
+    // Calculate the number of correct and wrong answers
+    const correctCount = scores.filter(score => score.correct).length;
+    const wrongCount = scores.filter(score => !score.correct).length;
+
+    return <ResultPage scores={scores} correctCount={correctCount} wrongCount={wrongCount} />;
   }
 
   return (
