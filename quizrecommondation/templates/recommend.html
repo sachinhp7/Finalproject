@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education Recommendation System</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            margin-top: 50px;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            background-color: #fff;
+        }
+
+        .mynav {
+            background: black;
+            color: white;
+            padding: 10px;
+        }
+
+        h1 {
+            font-size: 24px;
+            color:black;
+
+        }
+
+        h2 {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<div class="mynav">
+    <div class="container">
+        <h1 class="text-center">MQuiz Recommendation System</h1>
+    </div>
+</div>
+<div class="container">
+    <h2 class="text-center">Fill in the details to get recommendations</h2>
+    <form method="post" action="/pred">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="part_time_job">Result:</label>
+                    <select class="form-control" id="part_time_job" name="part_time_job">
+                        <option value="true">Pass</option>
+                        <option value="false">Fail</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <!-- Add more form fields here as needed -->
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="math_score">Algebra Score:</label>
+                    <input type="number" class="form-control" id="math_score" name="math_score" onchange="calculateScores()">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="history_score">Sets Score:</label>
+                    <input type="number" class="form-control" id="history_score" name="history_score" onchange="calculateScores()">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="physics_score">Indices Score:</label>
+                    <input type="number" class="form-control" id="physics_score" name="physics_score" onchange="calculateScores()">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="total_score">Total Score:</label>
+                    <input type="number" class="form-control" id="total_score" name="total_score" onchange="calculateScores()">
+                </div>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+
+</body>
+</html>
