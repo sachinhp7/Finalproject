@@ -1,0 +1,114 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-image: url('C:\Users\sachi\OneDrive\Desktop\qq\quiz_app\client\src\components\background_img.jpeg'); /* Replace 'your-image-url.jpg' with the URL or path to your background image */
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* App.css */
+.content-box {
+  color: white;
+  padding: 20px;
+
+  display: flex;
+  align-items: center; /* Align items vertically */
+}
+
+.black-background {
+  background-color: black;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.content {
+  flex-grow: 1;
+}
+
+.navigation {
+  display: flex;
+  justify-content: flex-end; /* Align items to the right */
+}
+
+.nav-button {
+  background-color: transparent;
+  color: white;
+  border: none;
+  margin-left: 10px; /* Adjust margin as needed */
+  cursor: pointer;
+}
+
+.nav-button:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+/* App.css */
+.header-content {
+  background-color: rgba(255, 255, 255, 0.5); /* Transparent white color */
+  padding: 20px;
+  text-align: center;
+}
+
+.welcome{
+  color: black;
+}
+
+.welpara{
+  color: black;
+}
+
+/* App.css */
+.header-button {
+  background-color: #000000; /* Blue color, adjust as needed */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  margin-top: 200px; /* Adjust margin as needed */
+}
+
+.header-button:hover {
+  background-color: #0056b3; /* Darker blue color on hover */
+}
+
+
+
